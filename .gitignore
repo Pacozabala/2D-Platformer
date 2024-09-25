@@ -1,0 +1,12 @@
+# Unity generated folders
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+Packages/
+ProjectSettings/
+UserSettings/
+
+
