@@ -65,7 +65,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0038847923, y: 0.0077700615}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -76,7 +76,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.1, y: 1.1}
+  m_Size: {x: 3.5, y: 1.5}
   m_EdgeRadius: 0
 --- !u!114 &7016168849459120139
 MonoBehaviour:
@@ -91,8 +91,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  parentColl: {fileID: 0}
-  offset: 0
+  parentColl: {fileID: 2198499437575717396}
+  playerHead: {fileID: 0}
+  playerBody: {fileID: 0}
 --- !u!1 &7753560812901753916
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,16 +197,16 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 28a2adc8ccfd7476db1f982370f85d14, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 7
 --- !u!61 &2198499437575717396
 BoxCollider2D:
@@ -216,7 +217,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 7753560812901753916}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 28a2adc8ccfd7476db1f982370f85d14, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
