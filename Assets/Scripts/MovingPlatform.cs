@@ -29,4 +29,12 @@ public class MovingPlatform : MonoBehaviour
             target = new Vector2(position.x + xOffset, position.y + yOffset);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        other.transform.SetParent(transform);
+    }
+
+    private void OnCollisionExit2D(Collision2D other) {
+        other.transform.SetParent(null);
+    }
 }
